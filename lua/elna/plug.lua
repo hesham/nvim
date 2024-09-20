@@ -27,6 +27,7 @@ Plug('VonHeikemen/lsp-zero.nvim', { ['branch'] = 'v4.x'})
 Plug('nvim-tree/nvim-web-devicons')
 Plug('nvim-tree/nvim-tree.lua')
 Plug('akinsho/bufferline.nvim', { ['tag'] = '*' })
+Plug('folke/which-key.nvim', { ['event'] = 'VeryLazy' })
 
 vim.call('plug#end')
 
