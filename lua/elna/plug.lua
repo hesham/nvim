@@ -23,5 +23,10 @@ Plug('hrsh7th/nvim-cmp')
 Plug('hrsh7th/cmp-nvim-lsp')
 Plug('VonHeikemen/lsp-zero.nvim', { ['branch'] = 'v4.x'})
 
+--- Show tree and buffer
+Plug('nvim-tree/nvim-web-devicons')
+Plug('nvim-tree/nvim-tree.lua')
+Plug('akinsho/bufferline.nvim', { ['tag'] = '*' })
+
 vim.call('plug#end')
 
