@@ -13,7 +13,7 @@ Plug('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })
 -- Treesitter: language parsing, used for syntax highlighting
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
 
--- LSP: for code auto-completion
+--vim.keymap.set('n', '<leader>ps', builtin.live_grep, { desc = 'Search' }) LSP: for code auto-completion
 --- Use mason to manage language servers
 Plug('williamboman/mason.nvim')
 Plug('williamboman/mason-lspconfig.nvim')
@@ -28,6 +28,12 @@ Plug('nvim-tree/nvim-web-devicons')
 Plug('nvim-tree/nvim-tree.lua')
 Plug('akinsho/bufferline.nvim', { ['tag'] = '*' })
 Plug('folke/which-key.nvim', { ['event'] = 'VeryLazy' })
+
+--- Show indent guides so I don't go blind in deeply nested structures
+Plug('lukas-reineke/indent-blankline.nvim')
+
+-- Status line
+Plug('nvim-lualine/lualine.nvim')
 
 vim.call('plug#end')
 

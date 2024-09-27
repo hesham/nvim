@@ -6,8 +6,12 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 -- empty setup using defaults
-require("nvim-tree").setup({
+local tree = require('nvim-tree')
+
+tree.setup({
   view = {
     width = 30,
   },
 })
+
+vim.keymap.set('n', '<leader>pt', function() require('nvim-tree.api').tree.open() end, { desc = "Go to Project Tree " })
